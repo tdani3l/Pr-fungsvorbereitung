@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_uebung_unit_tests_ueberladen", "03_uebung_unit_tests_ueberladen\03_uebung_unit_tests_ueberladen.csproj", "{019AD9F7-FDEB-4498-8530-8589553AA5C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uebung_2", "uebung_2\uebung_2.csproj", "{6C2B67E6-EB23-4A53-AD03-5A20409A54E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{019AD9F7-FDEB-4498-8530-8589553AA5C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019AD9F7-FDEB-4498-8530-8589553AA5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019AD9F7-FDEB-4498-8530-8589553AA5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019AD9F7-FDEB-4498-8530-8589553AA5C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C2B67E6-EB23-4A53-AD03-5A20409A54E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C2B67E6-EB23-4A53-AD03-5A20409A54E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C2B67E6-EB23-4A53-AD03-5A20409A54E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C2B67E6-EB23-4A53-AD03-5A20409A54E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C811725E-86DF-4BA4-9630-33F71E4F5F25}
+	EndGlobalSection
+EndGlobal

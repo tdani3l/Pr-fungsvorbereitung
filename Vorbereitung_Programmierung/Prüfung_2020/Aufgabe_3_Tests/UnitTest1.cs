@@ -20,6 +20,12 @@ namespace Aufgabe_3_Tests
         }
 
         [TestMethod]
+        public void test()
+        {
+            Assert.AreEqual(2 + 2, 4);
+        }
+
+        [TestMethod]
         public void TestMethod2()
         {
             Base6Coordinate base6Coordinate = new Base6Coordinate(51, NorthSouth.North, 30, 2.0448, 0, EastWest.West, 8, 34.4688);
