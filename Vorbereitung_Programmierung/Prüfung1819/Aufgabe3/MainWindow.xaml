@@ -1,0 +1,40 @@
+﻿<Window x:Class="Aufgabe3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aufgabe3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="parent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="bahnhöfe:"/>
+        <TextBlock Text="bahnsteige:" Grid.Row="1"/>
+        <TextBlock Text="aufzüge:" Grid.Row="2"/>
+
+        <ListView x:Name="lv" Grid.Column="1" ItemsSource="{Binding }" IsSynchronizedWithCurrentItem="True"/>
+        <DataGrid Grid.Row="1" Grid.Column="1" ItemsSource="{Binding /Bahnsteigdaten}" IsSynchronizedWithCurrentItem="True"       AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="bahnsteig" Binding="{Binding Bahnsteig}"/>
+                <DataGridTextColumn Header="Gleis" Binding="{Binding Gleisnummer}"/>
+                <DataGridTextColumn Header="Bez" Binding="{Binding oertliche_Bezeichnung}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid Grid.Row="2" Grid.Column="1" ItemsSource="{Binding /Aufzuege}" IsSynchronizedWithCurrentItem="True"       AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="name" Binding="{Binding Equipmentname}"/>
+                <DataGridTextColumn Header="hertseller" Binding="{Binding Hersteller}"/>
+                <DataGridTextColumn Header="Baujahr" Binding="{Binding Baujahr}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

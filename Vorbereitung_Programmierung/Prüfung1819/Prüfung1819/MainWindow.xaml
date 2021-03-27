@@ -1,0 +1,47 @@
+﻿<Window x:Class="Prüfung1819.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prüfung1819"
+        mc:Ignorable="d" FontSize="20"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="parent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Bahnhofsnummer"/>
+        <TextBlock Text="Station" Grid.Row="1"/>
+        <TextBlock Text="Abk. Betriebstelle" Grid.Row="2"/>
+        <TextBlock Text="Regionalbereich" Grid.Row="3"/>
+        <TextBlock Text="Bundesland" Grid.Row="4"/>
+        <TextBlock Text="BahnhofsKategorie" Grid.Row="5"/>
+
+        <TextBlock Grid.Column="1" Text="{Binding Bahnhofsnummer}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Station}"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Abkuerzung_Betriebsstelle}"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Regionalbereich}"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Bundesland}"/>
+        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Bahnhofskategorie}"/>
+
+        <Button x:Name="vor" Click="vor_Click" Content="Vor" Grid.Column="1" Grid.Row="6"/>
+        <Button x:Name="zur" Click="zur_Click" Content="Zurück" Grid.Column="1" Grid.Row="7"/>
+        <Button x:Name="spei" Click="spei_Click" Content="Änderungen speichern" Grid.Column="1" Grid.Row="8"/>
+
+        <TextBlock Text="Suche:" Grid.Column="1" Grid.Row="9"/>
+        <TextBox x:Name="tb_search" Grid.Row="9" Grid.Column="1" Margin="100 0 0 0" KeyUp="tb_search_KeyUp"/>
+    </Grid>
+</Window>
